@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.hamburger-menu {
+    width: 2rem;
+    height: 3rem;
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    transition: right .8s;
+}
+
+.change .hamburger-menu {
+    right: 2rem;
+}
+
+.change .hamburger-menu:hover span {
+    opacity: 1;
+    visibility: visible;
+}
+
+.line {
+    height: 0.3rem;
+    background-color: rgb(20, 20, 24);
+    text-shadow: 0 0.1rem 0.2rem rgb(0, 0, 0, 0.2);
+    transition: all 0.8s;
+}
+
+.change .line-1 {
+    transform: rotateZ(-405deg) translate(-7px, 7px);
+}
+
+.change .line-2 {
+    opacity: 0;
+}
+
+.change .line-3 {
+    transform: rotateZ(405deg) translate(-7px, -8px);
+}
+
+.sidebar {
+    width: 10rem;
+    height: 40vh;
+    position: fixed;
+    top: .6rem;
+    right: -30rem;
+    background-color: #377CFD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.8s;
+    border-bottom-left-radius: 2rem;
+}
+
+.change {
+    right: 0;
+}
+
+.menu-item {
+    list-style: none;
+    margin: 25px;
+    align-items: center;
+}
+
+.menu-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+    font-family: 'roboto', sans-serif;
+}
+
+.menu-link::before,
+.menu-link::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+@media (max-width:230px) {
+    .hamburger-menu {
+        right: 1rem;
+        top: 2rem;
+    }
+}

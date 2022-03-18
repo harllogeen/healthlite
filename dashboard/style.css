@@ -1,0 +1,538 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 18% 82%;
+        overflow-x: hidden;
+    }
+    
+    .child {
+        width: 100%;
+        background-color: #40a3f8;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .col-1 {
+        padding-top: 2rem;
+        color: #fff;
+        width: 100%;
+    }
+    
+    .fixed {
+        position: fixed;
+        background-color: #40a3f8;
+    }
+    
+    .dash-effect {
+        display: flex;
+        justify-content: flex-start;
+        padding: .8rem 2.7rem;
+        background-color: #1d2b4f;
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+        /* margin: left 0; */
+        position: relative;
+        width: 100%;
+    }
+    
+    .dash-effect::after {
+        content: '';
+        height: 35px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        width: 3px;
+        top: 5px;
+    }
+    
+    .dash {
+        display: flex;
+        justify-content: flex-start;
+        padding: .8rem 1.8rem;
+        gap: 0.5rem;
+        margin-bottom: .2rem;
+    }
+    
+    .dash:hover {
+        background-color: #1d2b4f;
+        color: #fff;
+        text-align: center;
+        transform: scaleX(1);
+    }
+    
+    #dash:hover {
+        background-color: #1d2b4f;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .character-image {
+        width: 100%;
+    }
+    
+    #dash {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #fff;
+        padding: 0.5rem 2rem;
+        gap: 0.6rem;
+    }
+    
+    span {
+        font-weight: bold;
+    }
+    
+    .dash p {
+        color: #fff;
+    }
+    
+    .child2 {
+        background-color: #E5E5E5;
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    .parentofsub-child {
+        position: relative;
+    }
+    
+    .parentofsub-child .sub-child2 {
+        background: white;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 84% 15%;
+        padding-top: .3rem;
+        padding-bottom: 2rem;
+        height: 2.5rem;
+        position: fixed;
+    }
+    
+    .bell {
+        display: flex;
+        position: relative;
+        left: 88%;
+    }
+    
+    .bell2 {
+        display: flex;
+        position: absolute;
+        left: 70%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 7%;
+    }
+    
+    .toggle {
+        display: none;
+    }
+    
+    .display-block {
+        display: block;
+    }
+    
+    .bell img {
+        padding-bottom: 2rem;
+    }
+    
+    .div1 {
+        padding: 0.8rem;
+        display: grid;
+        grid-template-columns: 73.5% 25%;
+        width: 100%;
+        gap: 0.8rem;
+        margin-top: 3rem;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .smalldiv {
+        width: 100%;
+    }
+    
+    .smalldiv .Dr {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        background-color: #40a3f8;
+        border-radius: 10px;
+        color: #fff;
+    }
+    
+    .sub-Dr h1 {
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    
+    .btn {
+        border: none;
+        outline: none;
+        color: #fff;
+        background-color: #53acf9;
+        margin-top: 2rem;
+        padding: 1rem;
+        margin-left: .5rem;
+    }
+    
+    .second-dash {
+        padding-top: 10rem;
+        align-items: center;
+    }
+    
+    .frame-card {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    
+    .card {
+        background-color: #fff;
+        margin-top: 1rem;
+        border-radius: 10px;
+    }
+    
+    .card-content {
+        margin-top: 1rem;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .down-arrow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .total-sum {
+        font-weight: bold;
+        font-size: 2rem;
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+    
+    .total-sum-middle {
+        font-weight: bold;
+        font-size: 2rem;
+        padding-left: 1rem;
+        padding-top: 2.5rem;
+    }
+    
+    .total {
+        color: #8692A6;
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+    
+    .last-month {
+        color: #8692A6;
+        font-weight: smaller;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    select {
+        border: none;
+    }
+    
+    .your-next-patients-container {
+        width: 100%;
+        background-color: #fff;
+        margin-top: 1rem;
+        border-radius: 10px;
+    }
+    
+    .black-textflex {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    
+    .black-text {
+        position: relative;
+        font-size: normal;
+        font-family: iner, "sanrif";
+    }
+    
+    .black-text::after {
+        position: absolute;
+        bottom: -1rem;
+        left: 0;
+        width: 2rem;
+        height: 0.2rem;
+        content: "";
+        background-color: #40a3f8;
+    }
+    
+    .black-textflex .view-all {
+        color: #40a3f8;
+    }
+    
+    .graph img {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .showh4 {
+        color: #E5E5E5;
+    }
+    
+    .the-timeandimages {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        align-items: center;
+        color: #8692A6;
+    }
+    
+    .nameandimages {
+        display: flex;
+        justify-content: space-between;
+        background-color: #E5E5E5;
+        border-radius: 5px;
+        width: 100%;
+        padding-right: 1rem;
+        margin-right: 1rem;
+        margin-left: 5rem;
+    }
+    
+    .guys {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 0.5rem;
+    }
+    
+    .dotted {
+        font-weight: bolder;
+        padding-top: 0.5rem;
+    }
+    
+    .smalldiv2 {
+        width: 100%;
+    }
+    
+    .smalldiv2 .calender {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .calender img {
+        width: 100%;
+        height: 30vh;
+        padding-top: 1rem;
+    }
+    
+    .activity {
+        background-color: #fff;
+        margin-top: 2rem;
+        border-radius: 5px;
+        width: 100%;
+        margin-right: 2rem;
+    }
+    
+    .common {
+        width: 80%;
+    }
+    
+    .common .activity-card {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+    
+    .activity-card div p {
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+    }
+    
+    .activity span {
+        font-weight: bold;
+    }
+    
+    .view span {
+        color: #53acf9;
+    }
+    
+    .reverse-div1 {
+        display: grid;
+        grid-template-columns: 30% 69%;
+        width: 100%;
+        gap: 1%;
+        padding: 0 1rem;
+        z-index: 1
+    }
+    
+    .the-time-line {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        color: #8692A6;
+    }
+    
+    .long-line {
+        width: 100%;
+    }
+    
+    hr {
+        position: absolute;
+        left: 9.8rem;
+        width: 100%;
+        color: #8692A6;
+    }
+    
+    @media (max-width:1400px) {
+        hr {
+            width: 70%;
+        }
+    }
+    
+    @media (max-width:1024px) {
+        .container {
+            display: grid;
+            grid-template-columns: 0% 100%;
+        }
+        .col-1 {
+            display: none;
+        }
+        .toggle {
+            position: relative;
+            left: 1rem;
+        }
+        .display-block {
+            display: block;
+            z-index: 100;
+        }
+        .toggle {
+            display: block;
+        }
+        .bell {
+            position: relative;
+            left: 50%;
+        }
+        .bell2 {
+            left: 90%;
+        }
+        hr {
+            width: 70%;
+        }
+    }
+    
+    @media (max-width:960px) {
+        hr {
+            width: 70%;
+        }
+        .bell2 {
+            width: 10%;
+        }
+    }
+    
+    @media (max-width:768px) {
+        .div1 {
+            display: block;
+        }
+        .smalldiv {
+            display: block;
+        }
+        .smalldiv2 {
+            width: 100%;
+        }
+        .card {
+            background-color: #fff;
+            margin-top: 1rem;
+            border-radius: 10px;
+        }
+        .card-content {
+            margin-top: 1rem;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .frame-card {
+            display: block;
+        }
+        .card {
+            padding-top: 1rem;
+        }
+        .calender img {
+            height: 80vh;
+            margin-top: 0.8rem;
+        }
+        .character-img img {
+            height: 50vh;
+        }
+        .reverse-div1 {
+            display: block;
+        }
+        .bell {
+            position: relative;
+            left: 30%;
+        }
+        .bell2 {
+            width: 12%;
+        }
+    }
+    
+    @media(max-width:500px) {
+        .nameandimages {
+            margin-right: 3rem;
+        }
+        .calender img {
+            height: 50vh;
+        }
+        .character-img img {
+            display: none;
+        }
+        .characterimg2 img {
+            display: none;
+        }
+        hr {
+            width: 50%;
+        }
+        .bell2 {
+            width: 15%;
+        }
+        .bell {
+            left: 19%;
+        }
+    }
+    
+    @media(max-width:350px) {
+        .nameandimages {
+            display: none;
+        }
+        .character-img img {
+            display: none;
+        }
+        .Dr {
+            display: block;
+        }
+        .bell {
+            right: 10%;
+        }
+        .bell2 {
+            width: 17%;
+        }
+        hr {
+            width: 40%;
+        }
+    }
