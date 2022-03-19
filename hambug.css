@@ -10,7 +10,6 @@
 .hamburger-menu {
     width: 2rem;
     height: 3rem;
-    position: fixed;
     top: 2rem;
     right: 3rem;
     z-index: 2;

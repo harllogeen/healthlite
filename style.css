@@ -660,6 +660,12 @@
                 display: flex;
                 justify-content: space-around;
             }
+            .findsuitabledoctor {
+                margin-left: -2rem;
+            }
+            .logo-image {
+                margin-left: -1rem;
+            }
             nav {
                 display: none;
             }
