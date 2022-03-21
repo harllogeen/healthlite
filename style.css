@@ -25,7 +25,7 @@
         .header-flex {
             display: flex;
             justify-content: space-between;
-            padding: 3rem;
+            padding: 2rem;
             margin: auto;
         }
         
@@ -177,6 +177,7 @@
             width: 100%;
             padding: 2rem;
             line-height: 2rem;
+            margin-left: -2rem;
         }
         
         .findsuitabledoctor h1 {
@@ -267,7 +268,7 @@
         
         .doctor-img img {
             width: 100%;
-            padding-left: 4rem;
+            padding-left: 2rem 1rem;
         }
         
         .doctor-content {
@@ -395,7 +396,7 @@
             gap: 1rem;
             /* margin: 0 auto; */
             width: 100%;
-            padding: 0 3rem;
+            padding: 1rem 3rem;
             position: relative;
         }
         
@@ -489,7 +490,7 @@
         
         .young-female-image img {
             position: absolute;
-            right: -3rem;
+            right: -10rem;
             top: 1;
             bottom: .3rem;
             height: 60vh;
@@ -501,8 +502,8 @@
         
         .change-life-today {
             text-align: left;
-            padding-top: 5rem;
-            padding-left: 4rem;
+            padding-top: 9rem;
+            padding-left: 3rem;
             width: 100%;
         }
         
@@ -653,12 +654,17 @@
                 bottom: .3rem;
                 height: 40vh;
             }
+            .myseventh {
+                display: none;
+            }
         }
         
         @media(max-width:768px) {
             .header-flex {
                 display: flex;
                 justify-content: space-around;
+                padding: 2rem 2.5rem;
+                margin: auto;
             }
             .findsuitabledoctor {
                 margin-left: -2rem;

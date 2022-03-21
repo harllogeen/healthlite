@@ -51,8 +51,8 @@
 .sidebar {
     width: 10rem;
     height: 40vh;
-    position: fixed;
-    top: .6rem;
+    position: absolute;
+    top: 5rem;
     right: -30rem;
     background-color: #377CFD;
     display: flex;
@@ -60,6 +60,7 @@
     align-items: center;
     transition: right 0.8s;
     border-bottom-left-radius: 2rem;
+    z-index: 3;
 }
 
 .change {

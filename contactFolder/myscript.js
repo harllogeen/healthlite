@@ -16,19 +16,16 @@ let message = document.getElementById('message')
 let submit = document.getElementById('submit')
 submit.addEventListener('click', (e) => {
     e.preventDefault()
-
-
     contactInfo = {}
 
     if (name !== '' && email !== '' && message !== '') {
         contactInfo.name = name.value
         contactInfo.email = email.value
         contactInfo.message = message.value
+        console.log(contactInfo)
+        sessionStorage.setItem('mess', JSON.stringify(contactInfo))
 
     } else {
         alert(`please enter your info`)
-
-        sessionStorage.setItem('mess', JSON.stringify(contactInfo))
-        console.log(contactInfo)
     }
 });

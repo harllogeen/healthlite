@@ -72,7 +72,8 @@ li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center
+    text-align: center;
+    z-index: 1;
 }
 
 h1 {
@@ -105,7 +106,8 @@ h1 {
 .form-section {
     display: grid;
     grid-template-columns: 35% 55%;
-    gap: 5rem
+    gap: 5rem;
+    position: relative;
 }
 
 .card {
@@ -305,6 +307,12 @@ hr {
     }
     .marg {
         margin: 1rem 0;
+    }
+}
+
+@media (max-width:509px) {
+    h1 {
+        font-size: 2rem;
     }
 }
 
