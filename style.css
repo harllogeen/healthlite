@@ -1,844 +1,870 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        .container {
-            width: 100%;
-            overflow-x: hidden;
-            background-image: url(./images/Layer\ blur\ 5.png);
-            background-repeat: repeat-y;
-            background-position: center;
-            background-size: cover;
-            cursor: pointer;
-            font-family: 'roboto', sans-serif;
-        }
-        
-        .middle-container {
-            background-image: url(./images/Layer\ blur\ 5.png);
-            background-repeat: repeat-y;
-            background-position: center;
-            background-size: cover;
-        }
-        
-        .header-flex {
-            display: flex;
-            justify-content: space-between;
-            padding: 2rem;
-            margin: auto;
-        }
-        
-        p {
-            color: #646464;
-        }
-        
-        .logo-image {
-            width: 100%;
-        }
-        
-        #findandsearch {
-            font-size: 2rem;
-            font-family: 'Roboto', sans-serif;
-        }
-        
-        h1 {
-            font-size: 1.3rem;
-            font-family: 'Roboto', sans-serif;
-            color: #3D3D3F;
-        }
-        /* .hamburger-container {
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                
+                body {
+                    overflow-x: hidden;
+                }
+                
+                .container {
+                    width: 100%;
+                    overflow-x: hidden;
+                    background-image: url(./images/Layer\ blur\ 5.png);
+                    background-repeat: repeat-y;
+                    background-position: center;
+                    background-size: cover;
+                    cursor: pointer;
+                    font-family: 'roboto', sans-serif;
+                }
+                
+                .middle-container {
+                    background-image: url(./images/Layer\ blur\ 5.png);
+                    background-repeat: repeat-y;
+                    background-position: center;
+                    background-size: cover;
+                }
+                
+                .header-flex {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 2rem;
+                    margin: auto;
+                }
+                
+                p {
+                    color: #646464;
+                }
+                
+                .logo-image {
+                    width: 100%;
+                }
+                
+                #findandsearch {
+                    font-size: 2rem;
+                    font-family: 'Roboto', sans-serif;
+                }
+                
+                h1 {
+                    font-size: 1.2rem;
+                    font-family: 'Roboto', sans-serif;
+                    color: #3D3D3F;
+                }
+                /* .hamburger-container {
     display: none;
 } */
-        
-        h5 {
-            font-size: 1rem;
-            padding-top: 1rem;
-        }
-        
-        nav {
-            display: flex;
-            justify-content: space-between;
-            transition: right 0.8s;
-        }
-        
-        nav ul {
-            display: flex;
-            align-items: center;
-        }
-        
-        nav li {
-            list-style: none;
-            margin-left: 1rem;
-            align-items: center;
-        }
-        
-        nav a {
-            text-decoration: none;
-            color: #646464;
-            font-weight: bold;
-            position: relative;
-        }
-        
-        a::before,
-        a::after {
-            content: '';
-            width: 100%;
-            height: 2px;
-            background-color: #40A3F8;
-            position: absolute;
-            left: 0;
-            transform: scaleX(0);
-            transition: transform 0.5s;
-        }
-        
-        a::after {
-            bottom: 0;
-            transform-origin: right;
-        }
-        
-        a::before {
-            top: 0;
-            transform-origin: left;
-        }
-        
-        a:hover::before,
-        a:hover::after {
-            transform: scaleX(1);
-        }
-        
-        .btn {
-            text-decoration: none;
-            background-color: #40A3F8;
-            padding: 1rem;
-            color: #fff;
-            border-radius: 5px;
-            outline: none;
-            border: none;
-            margin-top: 1rem;
-        }
-        
-        .btn:hover {
-            color: #377CFD;
-            background-color: #F9F9F9;
-        }
-        
-        .btn1 {
-            text-decoration: none;
-            background-color: #40A3F8;
-            padding: 1rem .5rem;
-            color: black;
-            font-weight: bold;
-            border-radius: 5px;
-            outline: none;
-            border: none;
-            margin-left: 1rem;
-            text-align: center;
-        }
-        
-        .btn1:hover {
-            color: #377CFD;
-            background-color: #F9F9F9;
-        }
-        
-        .btn-explore {
-            text-decoration: none;
-            background-color: #40A3F8;
-            padding: 1rem;
-            color: #fff;
-            border-radius: 5px;
-            outline: none;
-            border: none;
-            margin-top: 3rem;
-            cursor: pointer;
-        }
-        
-        .btn-explore:hover {
-            color: #377CFD;
-            background-color: white;
-        }
-        
-        .my-explore {
-            text-align: center;
-        }
-        
-        .btn-white {
-            text-decoration: none;
-            background-color: #F9F9F9;
-            padding: 1rem;
-            color: #40A3F8;
-            border-radius: 5px;
-            outline: none;
-            border: none;
-            margin-top: 1rem;
-        }
-        
-        .findsuitabledoctor {
-            width: 100%;
-            padding: 2rem;
-            line-height: 2rem;
-            margin-left: -2rem;
-        }
-        
-        .findsuitabledoctor h1 {
-            font-size: 1rem;
-            padding-bottom: 1rem;
-            line-height: 3rem;
-        }
-        
-        .findsuitabledoctor span {
-            color: #40A3F8;
-        }
-        
-        .next-header-flex {
-            display: grid;
-            grid-template-columns: 50% 50%;
-            padding: 4rem 2rem;
-            position: relative;
-        }
-        
-        .right-doctor-image {
-            width: 100%;
-        }
-        
-        .second-container {
-            margin-top: 6rem;
-            margin-bottom: 6rem;
-            padding-top: 6rem;
-        }
-        
-        .second-container h1 {
-            text-align: center;
-        }
-        
-        .three-steps-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
-            padding: 4rem;
-            line-height: 1.5;
-            text-align: center;
-        }
-        
-        .search img {
-            background: linear-gradient(180deg, rgba(0, 158, 255, 0.1)0%, rgba(56, 175, 255, 0.1)100%);
-            padding: 1.5rem;
-            border-radius: 50%;
-        }
-        
-        .calender img {
-            background: radial-gradient(51.3% 53.44% at 48.82% 46.56%, rgba(255, 170, 6, 0.12)0%, rgba(255, 100, 26, 0.12) 100%);
-            padding: 1.5rem;
-            border-radius: 50%;
-        }
-        
-        .online-healthcare img {
-            background: linear-gradient(180deg, rgba(0, 158, 255, 0.1)0%, rgba(56, 175, 255, 0.1)100%);
-            padding: 1.5rem;
-            border-radius: 50%;
-        }
-        
-        .three-steps {
-            /* line-height: 2.5rem; */
-            width: 100%;
-        }
-        
-        .three-steps h6 {
-            font-size: 1rem;
-            color: #fff rgba(0, 0, 0, 0.5);
-        }
-        
-        .three-steps p {
-            color: #3D3D3F;
-            font-size: 1rem;
-        }
-        
-        .sub-second-container {
-            display: grid;
-            grid-template-columns: 49% 49%;
-            width: 100%;
-            gap: 2%;
-            padding: 2rem 0 0 0;
-            background-image: linear-gradient(to bottom right, rgb(230, 242, 252), rgb(230, 245, 253), #fff, rgba(229, 243, 250, 0.65), rgb(217, 233, 245));
-        }
-        
-        .doctor-img {
-            width: 100%;
-        }
-        
-        .doctor-img img {
-            width: 100%;
-            padding-left: 2rem 1rem;
-        }
-        
-        .doctor-content {
-            padding-top: 3rem;
-            width: 100%;
-        }
-        
-        .doctor-content h1 {
-            text-align: left;
-            padding-bottom: 2rem;
-        }
-        
-        .doctor-content p {
-            line-height: 2rem;
-            text-shadow: 0 0.1rem 0.2rem rgb(0, 0, 0, 0.2);
-            color: #3D3D3F rgba(61, 61, 63, 0.7);
-        }
-        
-        .nike-circle-flex {
-            display: flex;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            width: 100%;
-        }
-        
-        .nike-circle-flex img {
-            padding-right: 1rem;
-        }
-        
-        .our-service {
-            text-align: center;
-            padding: 2rem 0 2rem 0;
-            line-height: 2rem;
-            width: 100%;
-        }
-        
-        .our-service-6 {
-            text-align: center;
-            padding: 1rem 0 1rem 0;
-            line-height: 2rem;
-            width: 100%;
-        }
-        
-        .our-service-cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            text-align: center;
-            gap: 1rem;
-            margin: 0 auto;
-            width: 100%;
-            padding: 40px 50px;
-        }
-        
-        .our-service-cards .card1 {
-            background: linear-gradient(138.88deg, rgba(254, 254, 254, 0) -2.44%, #F9F9F9 -2.43%, rgba(254, 254, 254, 0.51) 98.26%);
-            padding: 2rem;
-            line-height: 2rem;
-            box-shadow: 0 0 0.9rem rgb(0, 0, 0, 0.5);
-            border-radius: 10px;
-            position: relative;
-            transition: 1s;
-            width: 100%;
-        }
-        
-        .our-service-cards .card1:hover::after {
-            content: "";
-            width: 100%;
-            height: 1rem;
-            background: rgba(64, 163, 248, 1);
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            border-bottom-left-radius: 5px;
-            border-top-right-radius: 5px;
-            transform: translateX(-50%);
-            display: block;
-            animation-name: ourservice;
-            animation-duration: 0.5s;
-        }
-        
-        .our-service-online-doctor {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            text-align: center;
-            gap: 1rem;
-            margin: 0 auto;
-            width: 100%;
-            /* padding: 0 3rem; */
-        }
-        
-        .mysection {
-            padding: 0 3rem;
-            background-image: url(./images/Layer\ blur\ 4.svg);
-            background-image: linear-gradient(to bottom right, rgb(230, 242, 252), rgb(230, 245, 253), #fff, rgba(229, 243, 250, 0.65), rgb(217, 233, 245));
-        }
-        
-        .online-doctor img {
-            width: 90%;
-            border-radius: 10px;
-        }
-        
-        .six-container {
-            padding-top: 1rem;
-            background-image: url(./images/Layer\ blur\ 5.svg);
-        }
-        
-        .our-service-online-doctor .online-doctor {
-            /* background: linear-gradient(138.88deg, rgba(254, 254, 254, 0) -2.44%, #F9F9F9 -2.43%, rgba(254, 254, 254, 0.51) 98.26%); */
-            background-color: #EEEFF1;
-            line-height: 2rem;
-            padding: 1rem 0rem;
-            box-shadow: 0 0 0.9rem rgb(0, 0, 0, 0.5);
-            border-radius: 10px;
-        }
-        
-        .our-service-online-doctor .online-doctor:hover {
-            background-color: #F9F9F9;
-            transform: translateX(5px);
-        }
-        
-        .our-service-cards-6 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            text-align: center;
-            gap: 1rem;
-            /* margin: 0 auto; */
-            width: 100%;
-            padding: 1rem 3rem;
-            position: relative;
-        }
-        
-        .our-service-cards-6 .card2 {
-            background: linear-gradient(138.88deg, rgba(254, 254, 254, 0) -2.44%, #F9F9F9 -2.43%, rgba(254, 254, 254, 0.51) 98.26%);
-            padding: 1rem;
-            line-height: 1.5rem;
-            box-shadow: 0 0 0.9rem rgb(0, 0, 0, 0.5);
-            text-align: left;
-            border-radius: 10px;
-            position: relative;
-            width: 100%;
-        }
-        
-        .card2 img {
-            border-radius: 50%;
-        }
-        
-        .common-img {
-            text-align: center;
-        }
-        
-        .socialmedia-icon img {
-            width: 50%;
-            padding-top: .5rem;
-        }
-        
-        .card1 img {
-            border-radius: 50%;
-        }
-        
-        .eclipseImg {
-            position: absolute;
-            top: -1.3rem;
-            right: 3rem;
-        }
-        
-        .menu-list {
-            display: flex;
-            justify-content: space-around;
-            padding-left: 2rem;
-        }
-        
-        .menu-list li {
-            list-style: none;
-        }
-        
-        .menu-list a {
-            text-decoration: none;
-            font-size: 12px;
-            color: #969696;
-        }
-        
-        h6 {
-            color: #377CFD;
-        }
-        
-        .sidebar {
-            display: none;
-        }
-        
-        .hamburger-container {
-            display: none;
-        }
-        
-        .nav-bar-image img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding-left: 40%;
-            padding-top: .5rem;
-        }
-        
-        .seventh-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            background-color: #40A3F8;
-            position: relative;
-            height: 40vh;
-            border-radius: 5px;
-            margin-top: 20rem;
-            margin-left: 5rem;
-            margin-right: 5rem;
-            margin-bottom: 3rem;
-        }
-        
-        .time-to-change-life {
-            display: none;
-        }
-        
-        .young-female-image img {
-            position: absolute;
-            right: -10rem;
-            top: 1;
-            bottom: .3rem;
-            height: 60vh;
-        }
-        
-        .young-female-image {
-            width: 100%;
-        }
-        
-        .change-life-today {
-            text-align: left;
-            padding-top: 9rem;
-            padding-left: 3rem;
-            width: 100%;
-        }
-        
-        .change-life-today h1 {
-            color: white;
-        }
-        
-        .footer-text {
-            font-family: 'Dm-sans', sans-serif;
-            color: black;
-            font-size: 1rem;
-            margin: 1rem 0;
-        }
-        
-        .flex {
-            display: flex;
-        }
-        
-        .equal {
-            display: grid;
-            grid-template-columns: 50% 42%;
-            gap: 9%;
-            text-align: left;
-        }
-        
-        .footer-ul {
-            list-style-type: none;
-        }
-        
-        .footer-li {
-            padding: 0.8rem 0;
-        }
-        
-        .footer-li a {
-            text-decoration: none;
-            color: #646464;
-            font-family: 'roboto', sans-serif;
-            font-size: 0.8rem;
-            text-align: left;
-        }
-        
-        .division {
-            display: grid;
-            grid-template-columns: 40% 60%;
-            background-color: #F9F9F9;
-            padding: 3rem;
-        }
-        
-        .direction {
-            display: flex;
-            justify-content: flex-end;
-            flex-direction: row;
-        }
-        
-        .li-heading-footer {
-            font-size: 1.1rem;
-            font-weight: 600;
-            /* padding-left: .7rem; */
-            cursor: pointer;
-        }
-        
-        .space-between {
-            justify-content: space-between;
-        }
-        
-        .newsletter {
-            font-family: "DM sans", sans-serif;
-            /* padding-left: 1rem; */
-        }
-        
-        .sub {
-            font-size: 0.8rem;
-            color: #646464;
-            padding-bottom: 1rem;
-            line-height: 2rem;
-        }
-        
-        .t-p {
-            padding: 4rem 3rem;
-        }
-        
-        .hr {
-            height: 0.88px;
-            background: #377CFD;
-            width: 70%;
-            text-align: center;
-            position: relative;
-            left: 15%;
-        }
-        
-        hr {
-            background-color: #969696;
-            height: 0.1rem;
-        }
-        
-        .f-pd {
-            padding: 1rem 3rem;
-        }
-        
-        .htgfont {
-            font-family: 'HK Grotesk', sans-serif;
-        }
-        
-        input {
-            padding: .6rem 0rem;
-            margin-bottom: .5rem;
-            border-radius: 5px;
-            text-align: center;
-            width: 100%;
-        }
-        
-        .myinput {
-            width: 100%;
-            margin: 0 auto;
-        }
-        
-        .input-btn {
-            padding: .6rem 0rem;
-            cursor: pointer;
-            color: white;
-            background-color: #40A3F8;
-            outline: none;
-            border: none;
-            border-radius: 5px;
-            width: 100%;
-            text-align: center;
-        }
-        
-        .input-btn:hover {
-            color: #377CFD;
-            background-color: #646464;
-        }
-        
-        @keyframes ourservice {
-            0% {
-                width: 0%;
-            }
-            50% {
-                width: 100%;
-            }
-        }
-        
-        @media (max-width:1024px) {
-            .young-female-image {
-                position: absolute;
-                left: 4rem;
-                top: 2;
-                bottom: .3rem;
-                height: 40vh;
-            }
-            .myseventh {
-                display: none;
-            }
-        }
-        
-        @media(max-width:768px) {
-            .header-flex {
-                display: flex;
-                justify-content: space-around;
-                padding: 2rem 2.5rem;
-                margin: auto;
-            }
-            .findsuitabledoctor {
-                margin-left: -2rem;
-            }
-            .logo-image {
-                margin-left: -1rem;
-            }
-            nav {
-                display: none;
-            }
-            .sidebar .menu {
-                display: block;
-            }
-            .hamburger-container {
-                display: block;
-            }
-            .next-header-flex {
-                display: block;
-                text-align: left;
-            }
-            .right-doctor-image {
-                margin-top: 3%;
-            }
-            .sub-second-container {
-                display: block;
-            }
-            .doctor-img img {
-                width: 70%;
-            }
-            .doctor-img {
-                text-align: center;
-            }
-            .doctor-content h2 {
-                text-align: left;
-                font-size: 2rem;
-            }
-            .doctor-content {
-                text-align: left;
-                padding-left: 10%;
-                font-size: 3rem;
-            }
-            .doctor-content p {
-                font-size: 1rem;
-            }
-            .nike-circle-flex {
-                display: none;
-            }
-            .our-service-online-doctor {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                text-align: center;
-                gap: .3rem;
-                margin: 0 auto;
-                width: 100%;
-            }
-            .online-doctor {
-                margin: 1rem;
-            }
-            .change-life-today {
-                display: none;
-            }
-            .myseventh {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                background-color: #40A3F8;
-                border-radius: 5px;
-                margin: 0 auto;
-                width: 90%;
-            }
-            .seventh-container {
-                display: none;
-            }
-            .li-heading-footer {
-                font-size: 1rem;
-                font-weight: 700;
-                cursor: pointer;
-            }
-            .newsletter {
-                font-size: .9rem;
-            }
-            .time-to-change-life {
-                display: block;
-                text-align: left;
-                padding: 1rem 1rem 1rem 0;
-            }
-            .time-to-change-life h1 {
-                color: #fff;
-                font-size: 2rem;
-            }
-        }
-        
-        @media (max-width:620px) {
-            .our-service-cards {
-                display: block;
-            }
-            .our-service-cards .card1 {
-                margin-top: 1rem;
-            }
-            .nav-bar-image {
-                display: none;
-            }
-        }
-        
-        @media (max-width:500px) {
-            .logo-image img {
-                width: 200px;
-            }
-            .three-steps-grid {
-                display: block;
-            }
-            .three-steps {
-                padding: 1rem 0;
-            }
-            .our-service-cards {
-                display: block;
-            }
-            .our-service-cards .card1 {
-                margin-top: 1rem;
-                padding: 1rem;
-            }
-            .nav-bar-image {
-                display: none;
-            }
-            .our-service-online-doctor {
-                display: block;
-                gap: .3rem;
-                width: 100%;
-            }
-            .online-doctor {
-                width: 90%;
-            }
-            .doctor-img img {
-                width: 100%;
-            }
-            .our-service-cards-6 {
-                display: block;
-            }
-            .our-service-cards-6 .card2 {
-                margin-bottom: 3rem;
-            }
-            .second-container {
-                width: 100%;
-            }
-            .change-life-today {
-                width: 100%;
-            }
-            .young-female-image img {
-                display: none;
-            }
-            .myseventh {
-                display: none;
-            }
-            .division {
-                display: block;
-                text-align: center;
-            }
-            .flex-end {
-                display: block;
-            }
-            .full-width {
-                display: block;
-                margin-bottom: 2rem;
-            }
-            .u-ty {
-                display: block;
-                text-align: center;
-            }
-            .menu-list {
-                padding-left: 0%;
-            }
-        }
-        
-        @media (max-width:350px) {
-            .logo-image img {
-                width: 100px;
-            }
-        }
+                
+                h5 {
+                    font-size: 1rem;
+                    padding-top: 1rem;
+                }
+                
+                nav {
+                    display: flex;
+                    justify-content: space-between;
+                    transition: right 0.8s;
+                }
+                
+                nav ul {
+                    display: flex;
+                    align-items: center;
+                }
+                
+                nav li {
+                    list-style: none;
+                    margin-left: 1rem;
+                    align-items: center;
+                }
+                
+                nav a {
+                    text-decoration: none;
+                    color: #646464;
+                    font-weight: bold;
+                    position: relative;
+                }
+                
+                a::before,
+                a::after {
+                    content: '';
+                    width: 100%;
+                    height: 2px;
+                    background-color: #40A3F8;
+                    position: absolute;
+                    left: 0;
+                    transform: scaleX(0);
+                    transition: transform 0.5s;
+                }
+                
+                a::after {
+                    bottom: 0;
+                    transform-origin: right;
+                }
+                
+                a::before {
+                    top: 0;
+                    transform-origin: left;
+                }
+                
+                a:hover::before,
+                a:hover::after {
+                    transform: scaleX(1);
+                }
+                
+                .btn {
+                    text-decoration: none;
+                    background-color: #40A3F8;
+                    padding: 1rem;
+                    color: #fff;
+                    border-radius: 5px;
+                    outline: none;
+                    border: none;
+                    margin-top: 1rem;
+                }
+                
+                .btn:hover {
+                    color: #377CFD;
+                    background-color: #F9F9F9;
+                }
+                
+                .btn1 {
+                    text-decoration: none;
+                    background-color: #40A3F8;
+                    padding: 1rem .5rem;
+                    color: black;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    outline: none;
+                    border: none;
+                    margin-left: 1rem;
+                    text-align: center;
+                }
+                
+                .btn1:hover {
+                    color: #377CFD;
+                    background-color: #F9F9F9;
+                }
+                
+                .btn-explore {
+                    text-decoration: none;
+                    background-color: #40A3F8;
+                    padding: 1rem;
+                    color: #fff;
+                    border-radius: 5px;
+                    outline: none;
+                    border: none;
+                    margin-top: 3rem;
+                    cursor: pointer;
+                }
+                
+                .btn-explore:hover {
+                    color: #377CFD;
+                    background-color: white;
+                }
+                
+                .my-explore {
+                    text-align: center;
+                }
+                
+                .btn-white {
+                    text-decoration: none;
+                    background-color: #F9F9F9;
+                    padding: 1rem;
+                    color: #40A3F8;
+                    border-radius: 5px;
+                    outline: none;
+                    border: none;
+                    margin-top: 1rem;
+                }
+                
+                .findsuitabledoctor {
+                    width: 100%;
+                    padding: 2rem;
+                    line-height: 2rem;
+                    margin-left: -2rem;
+                }
+                
+                .findsuitabledoctor h1 {
+                    font-size: 1rem;
+                    padding-bottom: 1rem;
+                    line-height: 3rem;
+                }
+                
+                .findsuitabledoctor span {
+                    color: #40A3F8;
+                }
+                
+                .next-header-flex {
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    padding: 4rem 2rem;
+                    position: relative;
+                }
+                
+                .right-doctor-image {
+                    width: 100%;
+                }
+                
+                .second-container {
+                    /* margin-top: 6rem;
+                    margin-bottom: 6rem; */
+                    padding-top: 6rem;
+                }
+                
+                .second-container h1 {
+                    text-align: center;
+                }
+                
+                .three-steps-grid {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 1rem;
+                    padding: 4rem;
+                    line-height: 1.5;
+                    text-align: center;
+                }
+                
+                .search img {
+                    background: linear-gradient(180deg, rgba(0, 158, 255, 0.1)0%, rgba(56, 175, 255, 0.1)100%);
+                    padding: 1.5rem;
+                    border-radius: 50%;
+                }
+                
+                .calender img {
+                    background: radial-gradient(51.3% 53.44% at 48.82% 46.56%, rgba(255, 170, 6, 0.12)0%, rgba(255, 100, 26, 0.12) 100%);
+                    padding: 1.5rem;
+                    border-radius: 50%;
+                }
+                
+                .online-healthcare img {
+                    background: linear-gradient(180deg, rgba(0, 158, 255, 0.1)0%, rgba(56, 175, 255, 0.1)100%);
+                    padding: 1.5rem;
+                    border-radius: 50%;
+                }
+                
+                .three-steps {
+                    /* line-height: 2.5rem; */
+                    width: 100%;
+                }
+                
+                .three-steps h6 {
+                    font-size: 1rem;
+                    color: #fff rgba(0, 0, 0, 0.5);
+                }
+                
+                .three-steps p {
+                    color: #3D3D3F;
+                    font-size: 1rem;
+                }
+                
+                .sub-second-container {
+                    display: grid;
+                    grid-template-columns: 49% 49%;
+                    width: 100%;
+                    gap: 2%;
+                    padding: 2rem 0 0 0;
+                    background-image: linear-gradient(to bottom right, rgb(230, 242, 252), rgb(230, 245, 253), #fff, rgba(229, 243, 250, 0.65), rgb(217, 233, 245));
+                }
+                
+                .doctor-img {
+                    width: 100%;
+                }
+                
+                .doctor-img img {
+                    width: 100%;
+                    padding-left: 2rem 1rem;
+                }
+                
+                .doctor-content {
+                    padding-top: 3rem;
+                    width: 100%;
+                }
+                
+                .doctor-content h1 {
+                    text-align: left;
+                    padding-bottom: 2rem;
+                }
+                
+                .doctor-content p {
+                    line-height: 2rem;
+                    color: #3D3D3F rgba(61, 61, 63, 0.7);
+                }
+                
+                .nike-circle-flex {
+                    display: flex;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    width: 100%;
+                }
+                
+                .nike-circle-flex img {
+                    padding-right: 1rem;
+                }
+                
+                .our-service {
+                    text-align: center;
+                    padding: 2rem 0 2rem 0;
+                    line-height: 2rem;
+                    width: 100%;
+                }
+                
+                .our-service-6 {
+                    text-align: center;
+                    padding: 1rem 0 1rem 0;
+                    line-height: 2rem;
+                    width: 100%;
+                }
+                
+                .our-service-cards {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    text-align: center;
+                    gap: 1rem;
+                    margin: 0 auto;
+                    width: 100%;
+                    padding: 40px 30px;
+                }
+                
+                .our-service-cards .card1 {
+                    background: linear-gradient(138.88deg, rgba(254, 254, 254, 0) -2.44%, #F9F9F9 -2.43%, rgba(254, 254, 254, 0.51) 98.26%);
+                    padding: 2rem;
+                    line-height: 2rem;
+                    box-shadow: 0 0 0.9rem rgb(0, 0, 0, 0.5);
+                    border-radius: 10px;
+                    position: relative;
+                    transition: 1s;
+                    width: 100%;
+                }
+                
+                .our-service-cards .card1:hover::after {
+                    content: "";
+                    width: 100%;
+                    height: 1rem;
+                    background: rgba(64, 163, 248, 1);
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    border-bottom-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    transform: translateX(-50%);
+                    display: block;
+                    animation-name: ourservice;
+                    animation-duration: 0.5s;
+                }
+                
+                .our-service-online-doctor {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    text-align: center;
+                    gap: 1rem;
+                    margin: 0 auto;
+                    width: 100%;
+                    /* padding: 0 3rem; */
+                }
+                
+                .mysection {
+                    padding: 0 1rem;
+                    background-image: url(./images/Layer\ blur\ 4.svg);
+                    background-image: linear-gradient(to bottom right, rgb(230, 242, 252), rgb(230, 245, 253), #fff, rgba(229, 243, 250, 0.65), rgb(217, 233, 245));
+                }
+                
+                .online-doctor img {
+                    width: 90%;
+                    border-radius: 10px;
+                }
+                
+                .six-container {
+                    padding-top: 1rem;
+                    background-image: url(./images/Layer\ blur\ 5.svg);
+                }
+                
+                .our-service-online-doctor .online-doctor {
+                    /* background: linear-gradient(138.88deg, rgba(254, 254, 254, 0) -2.44%, #F9F9F9 -2.43%, rgba(254, 254, 254, 0.51) 98.26%); */
+                    background-color: #EEEFF1;
+                    line-height: 2rem;
+                    padding: 1rem 0rem;
+                    box-shadow: 0 0 0.9rem rgb(0, 0, 0, 0.5);
+                    border-radius: 10px;
+                }
+                
+                .our-service-online-doctor .online-doctor:hover {
+                    background-color: #F9F9F9;
+                    transform: translateX(5px);
+                }
+                
+                .our-service-cards-6 {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    text-align: center;
+                    gap: 1rem;
+                    /* margin: 0 auto; */
+                    width: 100%;
+                    padding: 1rem 2rem;
+                    position: relative;
+                }
+                
+                .our-service-cards-6 .card2 {
+                    background: linear-gradient(138.88deg, rgba(254, 254, 254, 0) -2.44%, #F9F9F9 -2.43%, rgba(254, 254, 254, 0.51) 98.26%);
+                    padding: 1rem;
+                    line-height: 1.5rem;
+                    box-shadow: 0 0 0.9rem rgb(0, 0, 0, 0.5);
+                    text-align: left;
+                    border-radius: 10px;
+                    position: relative;
+                    width: 100%;
+                }
+                
+                .card2 img {
+                    border-radius: 50%;
+                }
+                
+                .common-img {
+                    text-align: center;
+                }
+                
+                .socialmedia-icon img {
+                    width: 50%;
+                    padding-top: .5rem;
+                }
+                
+                .card1 img {
+                    border-radius: 50%;
+                }
+                
+                .eclipseImg {
+                    position: absolute;
+                    top: -1.3rem;
+                    right: 3rem;
+                }
+                
+                .menu-list {
+                    display: flex;
+                    justify-content: space-around;
+                    padding-left: 2rem;
+                }
+                
+                .menu-list li {
+                    list-style: none;
+                }
+                
+                .menu-list a {
+                    text-decoration: none;
+                    font-size: 12px;
+                    color: #969696;
+                }
+                
+                h6 {
+                    color: #377CFD;
+                }
+                
+                .sidebar {
+                    display: none;
+                }
+                
+                .hamburger-container {
+                    display: none;
+                }
+                
+                .nav-bar-image img {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding-left: 40%;
+                    padding-top: .5rem;
+                }
+                
+                .seventh-container {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    background-color: #40A3F8;
+                    position: relative;
+                    height: 40vh;
+                    border-radius: 5px;
+                    margin-top: 20rem;
+                    margin-left: 5rem;
+                    margin-right: 5rem;
+                    margin-bottom: 3rem;
+                }
+                
+                .time-to-change-life {
+                    display: none;
+                }
+                
+                .young-female-image img {
+                    position: absolute;
+                    right: -10rem;
+                    top: 1;
+                    bottom: .3rem;
+                    height: 60vh;
+                }
+                
+                .young-female-image {
+                    width: 100%;
+                }
+                
+                .change-life-today {
+                    text-align: left;
+                    padding-top: 9rem;
+                    padding-left: 3rem;
+                    width: 100%;
+                }
+                
+                .change-life-today h1 {
+                    color: white;
+                }
+                
+                .footer-text {
+                    font-family: 'Dm-sans', sans-serif;
+                    color: black;
+                    font-size: 1rem;
+                    margin: 1rem 0;
+                }
+                
+                .flex {
+                    display: flex;
+                }
+                
+                .equal {
+                    display: grid;
+                    grid-template-columns: 50% 42%;
+                    gap: 9%;
+                    text-align: left;
+                }
+                
+                .footer-ul {
+                    list-style-type: none;
+                }
+                
+                .footer-li {
+                    padding: 0.8rem 0;
+                }
+                
+                .footer-li a {
+                    text-decoration: none;
+                    color: #646464;
+                    font-family: 'roboto', sans-serif;
+                    font-size: 0.8rem;
+                    text-align: left;
+                }
+                
+                .division {
+                    display: grid;
+                    grid-template-columns: 40% 60%;
+                    background-color: #F9F9F9;
+                    padding: 3rem;
+                }
+                
+                .direction {
+                    display: flex;
+                    justify-content: flex-end;
+                    flex-direction: row;
+                }
+                
+                .li-heading-footer {
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    /* padding-left: .7rem; */
+                    cursor: pointer;
+                }
+                
+                .space-between {
+                    justify-content: space-between;
+                }
+                
+                .newsletter {
+                    font-family: "DM sans", sans-serif;
+                    /* padding-left: 1rem; */
+                }
+                
+                .sub {
+                    font-size: 0.8rem;
+                    color: #646464;
+                    padding-bottom: 1rem;
+                    line-height: 2rem;
+                }
+                
+                .t-p {
+                    padding: 4rem 3rem;
+                }
+                
+                .hr {
+                    height: 0.88px;
+                    background: #377CFD;
+                    width: 70%;
+                    text-align: center;
+                    position: relative;
+                    left: 15%;
+                }
+                
+                hr {
+                    background-color: #969696;
+                    height: 0.1rem;
+                }
+                
+                .f-pd {
+                    padding: 1rem 3rem;
+                }
+                
+                .htgfont {
+                    font-family: 'HK Grotesk', sans-serif;
+                }
+                
+                input {
+                    padding: .6rem 0rem;
+                    margin-bottom: .5rem;
+                    border-radius: 5px;
+                    text-align: center;
+                    width: 100%;
+                }
+                
+                .myinput {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+                
+                .input-btn {
+                    padding: .6rem 0rem;
+                    cursor: pointer;
+                    color: white;
+                    background-color: #40A3F8;
+                    outline: none;
+                    border: none;
+                    border-radius: 5px;
+                    width: 100%;
+                    text-align: center;
+                }
+                
+                .input-btn:hover {
+                    color: #377CFD;
+                    background-color: #646464;
+                }
+                
+                @keyframes ourservice {
+                    0% {
+                        width: 0%;
+                    }
+                    50% {
+                        width: 100%;
+                    }
+                }
+                
+                @media (max-width:1024px) {
+                    .young-female-image {
+                        position: absolute;
+                        left: 4rem;
+                        top: 2;
+                        bottom: .3rem;
+                        height: 40vh;
+                    }
+                    .myseventh {
+                        display: none;
+                    }
+                }
+                
+                @media(max-width:768px) {
+                    .header-flex {
+                        display: flex;
+                        justify-content: space-around;
+                        padding: 2rem 2.5rem;
+                        margin: auto;
+                    }
+                    .findsuitabledoctor {
+                        margin-left: -2rem;
+                    }
+                    .logo-image {
+                        margin-left: -1rem;
+                    }
+                    nav {
+                        display: none;
+                    }
+                    .sidebar .menu {
+                        display: block;
+                    }
+                    .hamburger-container {
+                        display: block;
+                    }
+                    .next-header-flex {
+                        display: block;
+                        text-align: left;
+                    }
+                    .right-doctor-image {
+                        margin-top: 3%;
+                    }
+                    .sub-second-container {
+                        display: block;
+                    }
+                    .doctor-img img {
+                        width: 70%;
+                    }
+                    .doctor-img {
+                        text-align: center;
+                    }
+                    .doctor-content h2 {
+                        text-align: left;
+                        font-size: 2rem;
+                    }
+                    .doctor-content {
+                        text-align: left;
+                        padding: 10%;
+                        font-size: 2rem;
+                        margin-top: -2rem;
+                    }
+                    .doctor-content p {
+                        font-size: 1rem;
+                    }
+                    .nike-circle-flex {
+                        display: none;
+                    }
+                    .our-service-online-doctor {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        text-align: center;
+                        gap: .3rem;
+                        margin: 0 auto;
+                        width: 100%;
+                    }
+                    .online-doctor {
+                        margin: 1rem;
+                    }
+                    .change-life-today {
+                        display: none;
+                    }
+                    .myseventh {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        background-color: #40A3F8;
+                        border-radius: 5px;
+                        margin: 0 auto;
+                        width: 90%;
+                    }
+                    .seventh-container {
+                        display: none;
+                    }
+                    .li-heading-footer {
+                        font-size: 1rem;
+                        font-weight: 700;
+                        cursor: pointer;
+                    }
+                    .newsletter {
+                        font-size: .9rem;
+                    }
+                    .time-to-change-life {
+                        display: block;
+                        text-align: left;
+                        padding: 1rem 1rem 1rem 0;
+                    }
+                    .time-to-change-life h1 {
+                        color: #fff;
+                        font-size: 2rem;
+                    }
+                }
+                
+                @media (max-width:620px) {
+                    .our-service-cards {
+                        display: block;
+                    }
+                    .our-service-cards .card1 {
+                        margin-top: 1rem;
+                    }
+                    .nav-bar-image {
+                        display: none;
+                    }
+                }
+                
+                @media (max-width:500px) {
+                    .logo-image img {
+                        width: 200px;
+                    }
+                    .three-steps-grid {
+                        display: block;
+                    }
+                    .three-steps {
+                        padding: 2rem 0;
+                    }
+                    .our-service-cards {
+                        display: block;
+                    }
+                    .our-service-cards .card1 {
+                        margin-top: 1rem;
+                        padding: 1rem;
+                    }
+                    .nav-bar-image {
+                        display: none;
+                    }
+                    .our-service-online-doctor {
+                        display: block;
+                        gap: .3rem;
+                        width: 100%;
+                    }
+                    .online-doctor {
+                        width: 90%;
+                    }
+                    .doctor-img img {
+                        width: 100%;
+                        padding: 1rem;
+                    }
+                    .our-service-cards-6 {
+                        display: block;
+                    }
+                    .our-service-cards-6 .card2 {
+                        margin-bottom: 3rem;
+                    }
+                    .second-container {
+                        width: 100%;
+                    }
+                    .second-container {
+                        margin-top: 0;
+                    }
+                    .change-life-today {
+                        width: 100%;
+                    }
+                    .young-female-image img {
+                        display: none;
+                    }
+                    .myseventh {
+                        display: none;
+                    }
+                    .division {
+                        display: block;
+                        text-align: center;
+                    }
+                    .flex-end {
+                        display: block;
+                    }
+                    .full-width {
+                        display: block;
+                        margin-bottom: 2rem;
+                    }
+                    .u-ty {
+                        display: block;
+                        text-align: center;
+                    }
+                    .menu-list {
+                        padding-left: 0%;
+                    }
+                }
+                
+                @media (max-width:425px) {
+                    #findandsearch {
+                        font-size: 1.6rem;
+                    }
+                    .next-header-flex {
+                        padding: 1rem 2rem;
+                    }
+                    .doctor-img img {
+                        padding: 1rem;
+                    }
+                    .doctor-content {
+                        padding: 2rem;
+                    }
+                    .doctor-content h2 {
+                        font-size: 1.5rem;
+                    }
+                }
+                
+                @media (max-width:350px) {
+                    .logo-image img {
+                        width: 100px;
+                    }
+                }

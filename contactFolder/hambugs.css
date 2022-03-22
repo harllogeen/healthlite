@@ -8,21 +8,21 @@
 }
 
 .hamburger-menu {
-    width: 2rem;
+    width: 1.5rem;
     height: 3rem;
     position: fixed;
-    top: 2rem;
-    right: 3rem;
-    z-index: 2;
+    top: 1rem;
+    right: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
     transition: right .8s;
+    z-index: 3;
 }
 
 .change .hamburger-menu {
-    right: 1rem;
+    right: .5rem;
 }
 
 .change .hamburger-menu:hover span {
@@ -53,7 +53,7 @@
     width: 10rem;
     height: 40vh;
     position: fixed;
-    top: 1rem;
+    top: 3.5rem;
     right: -30rem;
     background-color: #377CFD;
     display: flex;
@@ -61,6 +61,7 @@
     align-items: center;
     transition: right 0.8s;
     border-bottom-left-radius: 2rem;
+    z-index: 3;
 }
 
 .change {
@@ -93,9 +94,10 @@
     transition: transform 0.5s;
 }
 
-@media (max-width:230px) {
+
+/* @media (max-width:230px) {
     .hamburger-menu {
         right: 1rem;
         top: 2rem;
     }
-}
+} */

@@ -49,11 +49,11 @@
 }
 
 .sidebar {
-    width: 10rem;
+    width: 9rem;
     height: 40vh;
     position: absolute;
     top: 5rem;
-    right: -30rem;
+    right: -10rem;
     background-color: #377CFD;
     display: flex;
     justify-content: center;
@@ -61,10 +61,35 @@
     transition: right 0.8s;
     border-bottom-left-radius: 2rem;
     z-index: 3;
+    display: none;
+    animation-name: slidein;
+    animation-duration: .3s;
+}
+
+@keyframes slidein {
+    0% {
+        right: -10rem
+    }
+    20% {
+        right: -8rem
+    }
+    40% {
+        right: -6rem
+    }
+    60% {
+        right: -4rem
+    }
+    80% {
+        right: -2rem
+    }
+    100% {
+        right: 0
+    }
 }
 
 .change {
     right: 0;
+    display: block;
 }
 
 .menu-item {
